@@ -33,7 +33,7 @@ def main() :
     actions = [[0, 1], [0, -1], [-1, 0], [1, 0]]
     value = set_env(world_size, terms)
 
-    print value
+    print(value)
 
     fig = plt.figure()
 
@@ -51,13 +51,14 @@ def main() :
             break
 
         value = new_value
-        print
-        print value
+        print()
+        print(value)
+        plt.cla()
         plt.imshow(value, cmap='jet')
+        plt.colorbar()
         plt.draw()
         plt.pause(1)
-    print value
-    plt.colorbar()
+    print(value)
     plt.show()
 
 if __name__ == '__main__':

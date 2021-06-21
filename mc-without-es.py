@@ -108,6 +108,7 @@ class Agent:
 
         fig = plt.figure()
         plt.imshow(world, cmap='jet')
+        plt.colorbar()
         fig.show()
 
 def main():

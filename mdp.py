@@ -52,11 +52,13 @@ def main() :
         value = new_value
         print()
         print(value)
+        plt.cla()
         plt.imshow(value, cmap='jet')
+        plt.colorbar()
         plt.draw()
         plt.pause(1)
     print(value)
-    plt.colorbar()
+
     plt.show()
 
 if __name__ == '__main__':

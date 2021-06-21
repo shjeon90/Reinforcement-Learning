@@ -105,7 +105,6 @@ class Agent:
 
 def main():
     world_size = 5
-    n_actions = 4
     learning_rate = 0.1
     epsilon = 0.1
     discount_factor = 0.5
